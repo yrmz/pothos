@@ -1,0 +1,26 @@
+{
+  "name": "pothos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.ts",
+  "scripts": {
+    "dev": "nodemon ./src/server.ts",
+    "start": "npx ts-node ./src/server.ts --transpileOnly",
+    "codegen": "graphql-codegen --config codegen.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pothos/core": "^3.30.0",
+    "graphql": "^16.7.1",
+    "graphql-yoga": "^4.0.3",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^4.0.1",
+    "@graphql-codegen/client-preset": "^4.0.1",
+    "@graphql-codegen/schema-ast": "^4.0.0",
+    "nodemon": "^2.0.22",
+    "typescript": "^5.1.6"
+  }
+}
